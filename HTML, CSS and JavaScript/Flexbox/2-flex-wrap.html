@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            border: 2px solid gray;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .item {
+            color: black;
+            background-color: aqua;
+            font-family: monospace;
+            font-size: 20px;
+            height: 50%;
+            min-width: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .green {
+            background-color: lightgreen;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>nowrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item">Item 1</div>
+        <div class="item purple">Item 2</div>
+        <div class="item green">Item 3</div>
+        <div class="item red">Item 4</div>
+    </div>
+
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item">Item 1</div>
+        <div class="item purple">Item 2</div>
+        <div class="item green">Item 3</div>
+        <div class="item red">Item 4</div>
+    </div>
+
+    <h1>wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item purple">Item 2</div>
+        <div class="item green">Item 3</div>
+        <div class="item red">Item 4</div>
+    </div>
+
+</body>
+
+</html>

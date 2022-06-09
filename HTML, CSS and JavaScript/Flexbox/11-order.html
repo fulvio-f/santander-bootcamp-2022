@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid gray;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: aqua;
+            color: black;
+            font-family: monospace;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .order-0{
+            order: 0;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>order: 0</h2>
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h2>order: mixed values</h2>
+    <div class="flex-container order-1">
+        <div class="item order-0">Item 1</div>
+        <div class="item order-1">Item 2</div>
+        <div class="item order-2">Item 3</div>
+        <div class="item order-1">Item 4</div>
+        <div class="item order-0">Item 5</div>
+    </div>
+</body>
+</html>

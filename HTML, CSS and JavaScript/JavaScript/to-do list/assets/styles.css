@@ -33,6 +33,7 @@ body {
 #todo-header {
     font-size: 65px;
     color: rgb(44,44,44);
+    margin-bottom: 10px;
 }
 
 #task-field{
@@ -59,6 +60,7 @@ body {
 }
 
 #task-list {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -66,16 +68,36 @@ body {
     width: 300px;
 }
 
-#task-box {
-    width: 300px;
-    background: green;
+.task {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
-#task-check {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+.task-box {
+    width: 240px;
+    height: 40px;
+    background-color: rgb(209, 209, 255);
+    font-size: 18px;
+    padding: 9px 0 8px 10px;
+    border: 2px solid rgb(55,55,55);
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.task-check {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
     border: 2px solid rgb(55,55,55);
     background: rgb(214,158,246);
     background: linear-gradient(180deg, rgba(214,158,246,1) 32%, rgba(236,170,245,1) 45%, rgba(175,170,255,1) 77%);
+}
+
+.task-check:hover {
+    background: rgb(238, 209, 255);
+    background: linear-gradient(180deg, rgb(236, 204, 255) 32%, rgb(243, 193, 250) 45%, rgb(193, 189, 253) 77%);
 }

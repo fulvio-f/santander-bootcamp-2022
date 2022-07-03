@@ -6,21 +6,21 @@ if (taskButton) {
 
 function addTask() {
 
-    var taskField = document.getElementById('task-field').value;
-    var taskList = document.getElementById('task-list');
-    var checkBox = document.createElement('div');
+    let taskField = document.getElementById('task-field').value;
+    let taskList = document.getElementById('task-list');
+    let checkBox = document.createElement('div');
 
     taskBox = document.createElement('span');
     taskBox.innerHTML = taskField;
-    taskBox.className = 'task-box';
+    taskBox.classList.add('task-box');
 
     taskCheck = document.createElement('button');
-    taskCheck.innerHTML = 'X';
-    taskCheck.className = 'task-check';
+    taskCheck.innerHTML = '✓';
+    taskCheck.classList.add('task-check');
 
     checkBox.appendChild(taskBox);
     checkBox.appendChild(taskCheck);
-    checkBox.className = 'task';
+    checkBox.classList.add('task');
 
     taskList.appendChild(checkBox);
 }
